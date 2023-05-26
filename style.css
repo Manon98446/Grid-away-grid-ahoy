@@ -1,16 +1,21 @@
-
 body{
-    box-sizing: border-box;
     margin: auto 0;
     height: 100vh;
+    background-color: rgb(221, 227, 233);
+    display: inline-grid;
+}
+main{
+    height: 100vh;
+    box-sizing: border-box;
+    margin: auto;
     display:inline-grid;
     grid-template-columns: 20% 20% 20% 20% ;
     background-color: rgb(221, 227, 233);
     justify-content: space-evenly;
-    grid-template-rows: 45% 45%;
+    grid-template-rows: auto;
     align-content: center;
     row-gap: 5vh;
-    padding-top: 5vh;
+   
     font-family: 'Raleway', sans-serif;
 }
 .carte{
@@ -20,6 +25,7 @@ body{
     justify-items: center;
     align-items: center;
     text-align: center;
+    align-content: space-between;
    
 }
 img{
@@ -37,22 +43,27 @@ h2{
     color: rgb(149, 149, 149);
     font-size: 15px;
 }
+.button_hr{
+    width: 70%;
+    padding-left: 10px;
+}
 button{
     box-sizing: border-box;
     background-color: white;
     color: rgb(128, 128, 128);
     font-weight: 700;
     padding:10px;
-    width: 50%;
     border-radius:100px;
-    margin-bottom: 3vh ;
+    margin-bottom: 20px ;
     border:0px solid white;
+
 }
 hr{
     background-color: rgb(181, 180, 180);
     height: 1px;
-    width: 30%;
+    width: 60%;
     border: none;
+    align-content: end;
 }
 button:hover{
     color:white;
@@ -62,12 +73,26 @@ button:hover{
 .carte:hover{
     box-shadow: 5px 5px 5px rgb(149, 149, 149)
 }
+
 /*adding responsiveness*/
 @media screen and (max-width: 768px) {
-    body{
+    main{
         box-sizing: border-box;
         grid-template-columns: 40% 40% ;
         grid-template-rows: auto auto;   
         height: 100%;
     }
+  }
+
+  /*sidebar burger menu styling*/
+  .sidebar{
+    position: fixed;
+    z-index: 5;
+  }
+  #my_sidebar{
+    height:100%;
+    width:20%;
+  }
+  a.close_button{
+    display: block;
   }

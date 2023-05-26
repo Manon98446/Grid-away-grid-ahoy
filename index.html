@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="script.js"></script>
     <style> @import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,800&family=Poppins&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&display=swap'); </style>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -9,77 +10,111 @@
     <title>Grid-away-grid-ahoy!</title>
 </head>
 <body>
-    <section class="carte">
-        <img class="images" src="anime.png">
-        <h2>Your EMP Back OfficeTour</h2>
-        <p class="resume">
-            Live 15 minutes of daily motivation, inspiration and education with EMP & World business leaders! Recommending.
-        </p>
-        <hr>
-        <button type="button">LEARN MORE</button>    
-    </section>
-    <section class="carte">
-        <img class="images" src="anime.png">
-        <h2>An overview of insider Tools & benefits</h2>
-        <p class="resume">
-            Live 15 minutes of daily motivation, inspiration and education with EMP & World business leaders! Recommending.
-        </p>
-        <hr>
-        <button type="button">LEARN MORE</button>
-    </section>
-    <section class="carte">
-        <img class="images" src="anime.png">
-        <h2>The EMP Affiliate Compensation Plan</h2>
-        <p class="resume">
-            Live 15 minutes of daily motivation, inspiration and education with EMP & World business leaders! Recommending.
-        </p>
-        <hr>
-        <button type="button">LEARN MORE</button>
-    </section>
-    <section class="carte">
-        <img class="images" src="anime.png">
-        <h2>How the EMP coaching</h2>
-        <p class="resume">
-            Live 15 minutes of daily motivation, inspiration and education with EMP & World business leaders! Recommending.
-        </p>
-        <hr>
-        <button type="button">LEARN MORE</button>
-    </section>
-    <section class="carte">
-        <img class="images" src="anime.png">
-        <h2>How to refer peaople & make money</h2>
-        <p class="resume">
-            Live 15 minutes of daily motivation, inspiration and education with EMP & World business leaders! Recommending.
-        </p>
-        <hr>
-        <button type="button">LEARN MORE</button>
-    </section>
-    <section class="carte">
-        <img class="images" src="anime.png">
-        <h2>How to get help and support</h2>
-        <p class="resume">
-            Live 15 minutes of daily motivation, inspiration and education with EMP & World business leaders! Recommending.
-        </p>
-        <hr>
-        <button type="button">LEARN MORE</button>
-    </section>
-    <section class="carte">
-        <img class="images" src="anime.png">
-        <h2>geting started: the essential trainings</h2>
-        <p class="resume">
-            Live 15 minutes of daily motivation, inspiration and education with EMP & World business leaders! Recommending.
-        </p>
-        <hr>
-        <button type="button">LEARN MORE</button>
-    </section>
-    <section class="carte">
-        <img class="images" src="anime.png">
-        <h2>The faster way to get your first sale </h2>
-        <p class="resume">
-            Live 15 minutes of daily motivation, inspiration and education with EMP & World business leaders! Recommending.
-        </p>
-        <hr>
-        <button type="button">LEARN MORE</button>
-    </section>
+    <header class="sidebar">
+            <!-- Sidebar -->
+        <div style="display:none;z-index:5" id="my_sidebar">
+            <button class="close_button" onclick="sidebar_close()">Close</button>
+            <a href="#" class="close_button">Link 1</a>
+            <a href="#" class="close_button">Link 2</a>
+            <a href="#" class="close_button">Link 3</a>
+        </div>
+        
+        <!-- Overlay -->
+        <div class="sidebar_overlay" onclick="sidebar_close()" style="cursor:pointer" id="my_overlay"></div>
+        
+        <!-- Page content -->
+        <button class="burger_button" onclick="sidebar_open()">&#9776;</button>
+        
+    </header>
+    <main>
+        <section class="carte">
+            <img class="images" src="anime.png">
+            <h2>Your EMP Back OfficeTour</h2>
+            <p class="resume">
+                Live 15 minutes of daily motivation, inspiration and education with EMP & World business leaders! Recommending.
+            </p>
+            <div class="button_hr">
+                <hr>
+                <button type="button">LEARN MORE</button>
+            </div>  
+        </section>
+        <section class="carte">
+            <img class="images" src="anime.png">
+            <h2>An overview of insider Tools & benefits</h2>
+            <p class="resume">
+                Live 15 minutes of daily motivation, inspiration and education with EMP & World business leaders! Recommending.
+            </p>
+            <div class="button_hr">
+                <hr>
+                <button type="button">LEARN MORE</button>
+            </div>
+        </section>
+        <section class="carte">
+            <img class="images" src="anime.png">
+            <h2>The EMP Affiliate Compensation Plan</h2>
+            <p class="resume">
+                Live 15 minutes of daily motivation, inspiration and education with EMP & World business leaders! Recommending.
+            </p>
+            <div class="button_hr">
+                <hr>
+                <button type="button">LEARN MORE</button>
+            </div>
+        </section>
+        <section class="carte">
+            <img class="images" src="anime.png">
+            <h2>How the EMP coaching</h2>
+            <p class="resume">
+                Live 15 minutes of daily motivation, inspiration and education with EMP & World business leaders! Recommending.
+            </p>
+            <div class="button_hr">
+                <hr>
+                <button type="button">LEARN MORE</button>
+            </div>
+        </section>
+        <section class="carte">
+            <img class="images" src="anime.png">
+            <h2>How to refer peaople & make money</h2>
+            <p class="resume">
+                Live 15 minutes of daily motivation, inspiration and education with EMP & World business leaders! Recommending.
+            </p>
+            <div class="button_hr">
+                <hr>
+                <button type="button">LEARN MORE</button>
+            </div>
+        </section>
+        <section class="carte">
+            <img class="images" src="anime.png">
+            <h2>How to get help and support</h2>
+            <p class="resume">
+                Live 15 minutes of daily motivation, inspiration and education with EMP & World business leaders! Recommending.
+            </p>
+            <div class="button_hr">
+                <hr>
+                <button type="button">LEARN MORE</button>
+            </div>
+        </section>
+        <section class="carte">
+            <img class="images" src="anime.png">
+            <h2>geting started: the essential trainings</h2>
+            <p class="resume">
+                Live 15 minutes of daily motivation, inspiration and education with EMP & World business leaders! Recommending.
+            </p>
+            <div class="button_hr">
+                <hr>
+                <button type="button">LEARN MORE</button>
+            </div>
+        </section>
+        <section class="carte">
+            <img class="images" src="anime.png">
+            <h2>The faster way to get your first sale </h2>
+            <p class="resume">
+                Live 15 minutes of daily motivation, inspiration and education with EMP & World business leaders! Recommending.
+            </p>
+            <div class="button_hr">
+                <hr>
+                <button type="button">LEARN MORE</button>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
